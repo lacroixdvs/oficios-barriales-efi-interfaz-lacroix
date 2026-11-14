@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es-AR" class="h-full bg-slate-100">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Manual de Identidad Visual y Logotipos Oficiales — Oficios Barriales (Impulso Barrial S.R.L.)">
+  <title>Identidad Visual — Oficios Barriales (Río Cuarto)</title>
+
+  <!-- TailwindCSS vía CDN para visualización inmediata -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            fondo: '#F8FAFC',
+            superficie: '#FFFFFF',
+            texto: '#0F172A',
+            azulConfianza: '#1D4ED8',
+            verdeTrueque: '#16A34A'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      background-color: #F8FAFC;
+      color: #0F172A;
+    }
+
+    /* Área táctil accesible */
+    .hit-target {
+      min-height: 48px;
+      min-width: 48px;
+    }
+
+    /* Foco visible estricto */
+    *:focus-visible {
+      outline: none;
+      box-shadow: 0 0 0 4px #93C5FD, 0 0 0 6px #1D4ED8 !important;
+    }
+
+    .tarjeta-visual {
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .tarjeta-visual:hover {
+      box-shadow: 0 12px 24px -6px rgba(15, 23, 42, 0.12);
+    }
+
+    /* Patrón de fondo tipo tablero de ajedrez para transparencias */
+    .patron-transparencia {
+      background-color: #ffffff;
+      background-image: linear-gradient(45deg, #f1f5f9 25%, transparent 25%),
+                        linear-gradient(-45deg, #f1f5f9 25%, transparent 25%),
+                        linear-gradient(45deg, transparent 75%, #f1f5f9 75%),
+                        linear-gradient(-45deg, transparent 75%, #f1f5f9 75%);
+      background-size: 20px 20px;
+      background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+    }
+  </style>
+</head>
+<body class="min-h-full py-8 px-4 sm:px-6 lg:px-8">
+
+  <div class="max-w-5xl mx-auto">
+
+    <!-- Encabezado de la Guía de Identidad -->
+    <header class="mb-10 text-center sm:text-left border-b border-slate-200 pb-6">
+      <div class="inline-flex items-center gap-2 bg-blue-100 text-blue-800 text-xs font-extrabold uppercase tracking-wider px-3 py-1.5 rounded-full mb-3">
+        <span>Entrega EFI • Impulso Barrial S.R.L.</span>
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+        Identidad Visual y Logotipos Oficiales
+      </h1>
+      <p class="text-base sm:text-lg text-slate-600 mt-2 max-w-3xl">
+        Manual de aplicaciones gráficas de <strong>Oficios Barriales</strong>. Los tres formatos oficiales están renderizados en vectores SVG escalables y listos para descargar en formato SVG o exportar en PNG en alta resolución.
+      </p>
+    </header>
+
+    <!-- Barra de Especificación de Paleta Oficial -->
+    <section class="mb-12 bg-white p-6 rounded-3xl border border-slate-200 shadow-sm" aria-label="Colores de marca">
+      <h2 class="text-lg font-bold text-slate-900 mb-4 flex items-center">
+        <span class="w-3 h-3 rounded-full bg-blue-700 mr-2" aria-hidden="true"></span>
+        Paleta Cromática de Marca
+      </h2>
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+        <div class="p-3 rounded-2xl border border-slate-200 bg-slate-50">
+          <div class="w-full h-12 rounded-xl bg-[#1D4ED8] mb-2 shadow-inner"></div>
+          <span class="block text-xs font-bold text-slate-900">Azul Confianza</span>
+          <span class="block text-xs text-slate-500 font-mono">#1D4ED8</span>
+        </div>
+        <div class="p-3 rounded-2xl border border-slate-200 bg-slate-50">
+          <div class="w-full h-12 rounded-xl bg-[#16A34A] mb-2 shadow-inner"></div>
+          <span class="block text-xs font-bold text-slate-900">Verde Trueque</span>
+          <span class="block text-xs text-slate-500 font-mono">#16A34A</span>
+        </div>
+        <div class="p-3 rounded-2xl border border-slate-200 bg-slate-50">
+          <div class="w-full h-12 rounded-xl bg-[#0F172A] mb-2 shadow-inner"></div>
+          <span class="block text-xs font-bold text-slate-900">Texto / Oscuro</span>
+          <span class="block text-xs text-slate-500 font-mono">#0F172A</span>
+        </div>
+        <div class="p-3 rounded-2xl border border-slate-200 bg-slate-50">
+          <div class="w-full h-12 rounded-xl bg-[#FFFFFF] border border-slate-300 mb-2 shadow-inner"></div>
+          <span class="block text-xs font-bold text-slate-900">Blanco Puro</span>
+          <span class="block text-xs text-slate-500 font-mono">#FFFFFF</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================================== -->
+    <!-- VARIANTE 1: ÍCONO CUADRADO PARA TIENDAS DE APLICACIONES             -->
+    <!-- =================================================================== -->
+    <article class="mb-14 bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-sm tarjeta-visual" aria-labelledby="titulo-icono-app">
+      <div class="flex flex-col lg:flex-row lg:items-center gap-8">
+        
+        <!-- Previsualización del Ícono -->
+        <div class="flex-shrink-0 flex justify-center">
+          <div class="relative w-64 h-64 sm:w-72 sm:h-72 rounded-[48px] overflow-hidden shadow-2xl border-4 border-white/80 ring-1 ring-slate-900/10">
+            <!-- SVG Ícono 1024x1024 -->
+            <svg id="svg-icono-app" viewBox="0 0 1024 1024" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="gradiente-azul" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#2563EB" />
+                  <stop offset="100%" stop-color="#1D4ED8" />
+                </linearGradient>
+                <filter id="sombra-icono" x="-10%" y="-10%" width="120%" height="120%">
+                  <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#0F172A" flood-opacity="0.25" />
+                </filter>
+              </defs>
+
+              <!-- Fondo Cuadrado con Bordes Redondeados para App Stores (Squircle) -->
+              <rect width="1024" height="1024" rx="228" fill="url(#gradiente-azul)" />
+
+              <!-- Círculo lumínico de fondo sutil -->
+              <circle cx="512" cy="512" r="380" fill="#FFFFFF" opacity="0.06" />
+
+              <!-- Grupo Central: Casa barrial + Llave inglesa + Apretón de manos -->
+              <g filter="url(#sombra-icono)">
+                
+                <!-- Techo / Casa Barrial de Protección -->
+                <path d="M 512,190 L 804,420 L 736,472 L 512,296 L 288,472 L 220,420 Z" fill="#FFFFFF" />
+
+                <!-- Chimenea estilizada de casa -->
+                <path d="M 680,250 L 740,250 L 740,370 L 680,322 Z" fill="#16A34A" />
+
+                <!-- Llave Inglesa Cruzada (Símbolo de Oficio Técnico) -->
+                <g transform="translate(512,500) rotate(-35) translate(-512,-500)">
+                  <!-- Mango de la herramienta -->
+                  <rect x="484" y="270" width="56" height="360" rx="28" fill="#FFFFFF" />
+                  <!-- Cabeza de la llave inglesa en verde trueque -->
+                  <path d="M 444,280 C 444,220 480,180 540,180 C 580,180 610,205 625,235 L 565,275 C 555,265 540,260 525,265 C 500,275 490,300 495,325 L 450,345 C 445,325 444,302 444,280 Z" fill="#16A34A" />
+                </g>
+
+                <!-- Manos Entrelazadas en Apretón (Trueque Vecinal y Solidaridad) -->
+                <!-- Mano Izquierda (Blanca) -->
+                <path d="M 310,540 C 310,510 335,490 370,490 L 460,490 L 530,550 C 545,562 555,585 540,605 C 525,622 495,625 475,610 L 430,575 L 395,640 C 380,665 350,670 325,655 C 300,640 295,610 310,585 Z" fill="#FFFFFF" />
+                
+                <!-- Mano Derecha (Verde Solidario #16A34A) -->
+                <path d="M 714,540 C 714,510 689,490 654,490 L 564,490 L 494,550 C 479,562 469,585 484,605 C 499,622 529,625 549,610 L 594,575 L 629,640 C 644,665 674,670 699,655 C 724,640 729,610 714,585 Z" fill="#16A34A" />
+
+                <!-- Centro del apretón: Unión de dedos -->
+                <ellipse cx="512" cy="580" rx="36" ry="24" fill="#FFFFFF" />
+
+                <!-- Base comunitaria de apoyo -->
+                <rect x="362" y="740" width="300" height="32" rx="16" fill="#FFFFFF" opacity="0.9" />
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Ficha Técnica y Acciones de Descarga -->
+        <div class="flex-1">
+          <div class="flex items-center gap-2 mb-2">
+            <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2.5 py-1 rounded-md">Variante 01</span>
+            <span class="text-xs text-slate-500 font-semibold">1024 × 1024 píxeles</span>
+          </div>
+          <h3 id="titulo-icono-app" class="text-2xl font-bold text-slate-900 mb-2">
+            Ícono Cuadrado para Tiendas de Aplicaciones
+          </h3>
+          <p class="text-sm text-slate-600 mb-6 leading-relaxed">
+            Diseñado para Google Play Store, App Store e ícono de acceso directo PWA en la pantalla de inicio del celular. Combina la casa barrial como símbolo de protección, la herramienta técnica y el apretón de manos en verde <strong>#16A34A</strong> representativo del trueque.
+          </p>
+
+          <div class="flex flex-wrap gap-3">
+            <button 
+              type="button" 
+              onclick="descargarSvg('svg-icono-app', 'icono-oficios-barriales-1024x1024.svg')"
+              class="boton-descargar hit-target inline-flex items-center px-4 py-3 bg-blue-700 hover:bg-blue-800 active:scale-98 text-white text-sm font-bold rounded-xl shadow-sm transition-all focus-visible:ring-4 focus-visible:ring-blue-400"
+              aria-label="Descargar ícono cuadrado en formato SVG vectorial"
+            >
+              <svg class="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+              </svg>
+              <span>Descargar SVG</span>
+            </button>
+
+            <button 
+              type="button" 
+              onclick="descargarPng('svg-icono-app', 1024, 1024, 'icono-oficios-barriales-1024x1024.png')"
+              class="boton-descargar hit-target inline-flex items-center px-4 py-3 bg-slate-900 hover:bg-slate-800 active:scale-98 text-white text-sm font-bold rounded-xl shadow-sm transition-all focus-visible:ring-4 focus-visible:ring-slate-400"
+              aria-label="Descargar ícono cuadrado en formato PNG de 1024 por 1024 píxeles"
+            >
+              <svg class="w-5 h-5 mr-2 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+              </svg>
+              <span>Descargar PNG (1024×1024)</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </article>
+
+
+    <!-- =================================================================== -->
+    <!-- VARIANTE 2: LOGO HORIZONTAL PRINCIPAL (FONDO CLARO)                 -->
+    <!-- =================================================================== -->
+    <article class="mb-14 bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-sm tarjeta-visual" aria-labelledby="titulo-logo-horizontal">
+      <div class="flex flex-col gap-6">
+        
+        <div class="flex items-center gap-2">
+          <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2.5 py-1 rounded-md">Variante 02</span>
+          <span class="text-xs text-slate-500 font-semibold">Uso principal en web, membretes y presentaciones</span>
+        </div>
+
+        <h3 id="titulo-logo-horizontal" class="text-2xl font-bold text-slate-900">
+          Logo Horizontal Principal (Fondo Claro)
+        </h3>
+        <p class="text-sm text-slate-600 max-w-3xl leading-relaxed">
+          Composición horizontal balanceada. Isotipo circular de alto impacto junto a la tipografía <strong>Oficios Barriales</strong> en tono `#0F172A` y el subtítulo identificador de la ciudad de Río Cuarto.
+        </p>
+
+        <!-- Contenedor del Logo Horizontal con fondo blanco puro -->
+        <div class="w-full bg-white border-2 border-slate-200 rounded-2xl p-6 sm:p-10 flex items-center justify-center shadow-inner overflow-x-auto">
+          <div class="min-w-[480px] max-w-xl w-full">
+            <svg id="svg-logo-horizontal" viewBox="0 0 760 180" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">
+              <!-- Isotipo Circular a la izquierda -->
+              <g transform="translate(20, 15)">
+                <!-- Círculo base azul confianza -->
+                <circle cx="75" cy="75" r="72" fill="#1D4ED8" />
+                
+                <!-- Techo / Casa blanca -->
+                <path d="M 75,32 L 120,68 L 110,76 L 75,48 L 40,76 L 30,68 Z" fill="#FFFFFF" />
+                <path d="M 102,40 L 112,40 L 112,58 L 102,50 Z" fill="#16A34A" />
+
+                <!-- Apretón de manos estilizado en el centro -->
+                <!-- Mano izquierda blanca -->
+                <path d="M 45,85 C 45,80 50,75 58,75 L 72,75 L 83,86 C 87,90 85,96 80,98 L 72,92 L 66,102 C 63,107 57,108 52,105 Z" fill="#FFFFFF" />
+                <!-- Mano derecha verde -->
+                <path d="M 105,85 C 105,80 100,75 92,75 L 78,75 L 67,86 C 63,90 65,96 70,98 L 78,92 L 84,102 C 87,107 93,108 98,105 Z" fill="#16A34A" />
+                
+                <!-- Centro de unión -->
+                <circle cx="75" cy="90" r="6" fill="#FFFFFF" />
+                <rect x="52" cy="116" width="46" height="6" rx="3" fill="#FFFFFF" opacity="0.85" />
+              </g>
+
+              <!-- Logotipo Tipográfico -->
+              <g transform="translate(195, 45)">
+                <!-- Título Principal "Oficios" -->
+                <text x="0" y="46" font-family="'Inter', system-ui, sans-serif" font-size="48" font-weight="900" fill="#0F172A" letter-spacing="-1">
+                  Oficios<tspan fill="#1D4ED8">Barriales</tspan>
+                </text>
+                
+                <!-- Subtítulo "RED VECINAL SOLIDARIA • RÍO CUARTO" -->
+                <text x="2" y="78" font-family="'Inter', system-ui, sans-serif" font-size="14" font-weight="700" fill="#16A34A" letter-spacing="3">
+                  RED VECINAL SOLIDARIA • RÍO CUARTO
+                </text>
+              </g>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Botones de Acción -->
+        <div class="flex flex-wrap gap-3">
+          <button 
+            type="button" 
+            onclick="descargarSvg('svg-logo-horizontal', 'logo-oficios-barriales-horizontal.svg')"
+            class="boton-descargar hit-target inline-flex items-center px-4 py-3 bg-blue-700 hover:bg-blue-800 active:scale-98 text-white text-sm font-bold rounded-xl shadow-sm transition-all focus-visible:ring-4 focus-visible:ring-blue-400"
+            aria-label="Descargar logo horizontal en formato SVG vectorial"
+          >
+            <svg class="w-5 h-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+            </svg>
+            <span>Descargar SVG</span>
+          </button>
+
+          <button 
+            type="button" 
+            onclick="descargarPng('svg-logo-horizontal', 1520, 360, 'logo-oficios-barriales-horizontal.png')"
+            class="boton-descargar hit-target inline-flex items-center px-4 py-3 bg-slate-900 hover:bg-slate-800 active:scale-98 text-white text-sm font-bold rounded-xl shadow-sm transition-all focus-visible:ring-4 focus-visible:ring-slate-400"
+            aria-label="Descargar logo horizontal en formato PNG de alta resolución"
+          >
+            <svg class="w-5 h-5 mr-2 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            <span>Descargar PNG (Alta Resolución)</span>
+          </button>
+        </div>
+
+      </div>
+    </article>
+
+
+    <!-- =================================================================== -->
+    <!-- VARIANTE 3: VERSIÓN OSCURA / MONOCROMÁTICA                          -->
+    <!-- =================================================================== -->
+    <article class="mb-14 bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-sm tarjeta-visual" aria-labelledby="titulo-logo-oscuro">
+      <div class="flex flex-col gap-6">
+        
+        <div class="flex items-center gap-2">
+          <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2.5 py-1 rounded-md">Variante 03</span>
+          <span class="text-xs text-slate-500 font-semibold">Fondos oscuros, serigrafía y sellos monocromáticos</span>
+        </div>
+
+        <h3 id="titulo-logo-oscuro" class="text-2xl font-bold text-slate-900">
+          Logo en Modo Oscuro y Versión Monocromática
+        </h3>
+        <p class="text-sm text-slate-600 max-w-3xl leading-relaxed">
+          Diseñado para fondos con contraste inverso (`#0F172A`) o impresión en una sola tinta (sellos de goma, fotocopias, presupuestos impresos o indumentaria de trabajo).
+        </p>
+
+        <!-- Comparativa 2 columnas: Fondo Oscuro y Monocromo Puro -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <!-- Sub-opción A: Fondo Oscuro -->
+          <div class="bg-[#0F172A] rounded-2xl p-6 flex flex-col justify-between shadow-inner">
+            <span class="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">Modo Fondo Oscuro</span>
+            <div class="py-4">
+              <svg id="svg-logo-oscuro" viewBox="0 0 680 160" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(10, 10)">
+                  <circle cx="70" cy="70" r="66" fill="#1D4ED8" />
+                  <path d="M 70,30 L 110,64 L 102,70 L 70,44 L 38,70 L 30,64 Z" fill="#FFFFFF" />
+                  <path d="M 94,36 L 104,36 L 104,52 L 94,44 Z" fill="#22C55E" />
+                  <!-- Manos -->
+                  <path d="M 42,78 C 42,74 46,70 54,70 L 68,70 L 78,80 C 82,84 80,90 75,92 L 67,86 L 62,94 C 59,98 54,99 50,96 Z" fill="#FFFFFF" />
+                  <path d="M 98,78 C 98,74 94,70 86,70 L 72,70 L 62,80 C 58,84 60,90 65,92 L 73,86 L 78,94 C 81,98 86,99 90,96 Z" fill="#22C55E" />
+                </g>
+                <g transform="translate(170, 38)">
+                  <text x="0" y="44" font-family="'Inter', system-ui, sans-serif" font-size="44" font-weight="900" fill="#FFFFFF" letter-spacing="-1">
+                    Oficios<tspan fill="#60A5FA">Barriales</tspan>
+                  </text>
+                  <text x="2" y="74" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="700" fill="#4ADE80" letter-spacing="2.5">
+                    RED VECINAL SOLIDARIA • RÍO CUARTO
+                  </text>
+                </g>
+              </svg>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-800 flex justify-end">
+              <button 
+                type="button" 
+                onclick="descargarSvg('svg-logo-oscuro', 'logo-oficios-barriales-modo-oscuro.svg')"
+                class="text-xs font-bold text-blue-400 hover:text-blue-300 py-1 px-2.5 rounded-lg focus-visible:ring-2 focus-visible:ring-blue-400"
+              >
+                Descargar SVG Oscuro ↓
+              </button>
+            </div>
+          </div>
+
+          <!-- Sub-opción B: Monocromático Puro para Sellos -->
+          <div class="bg-white border-2 border-slate-300 rounded-2xl p-6 flex flex-col justify-between shadow-inner">
+            <span class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-4">Sello Monocromático (1 Tinta)</span>
+            <div class="py-4">
+              <svg id="svg-logo-monocromo" viewBox="0 0 680 160" width="100%" height="auto" xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(10, 10)">
+                  <circle cx="70" cy="70" r="66" fill="none" stroke="#000000" stroke-width="8" />
+                  <path d="M 70,30 L 110,64 L 102,70 L 70,44 L 38,70 L 30,64 Z" fill="#000000" />
+                  <!-- Manos contorno -->
+                  <path d="M 42,78 C 42,74 46,70 54,70 L 68,70 L 78,80 C 82,84 80,90 75,92 L 67,86 L 62,94 C 59,98 54,99 50,96 Z" fill="#000000" />
+                  <path d="M 98,78 C 98,74 94,70 86,70 L 72,70 L 62,80 C 58,84 60,90 65,92 L 73,86 L 78,94 C 81,98 86,99 90,96 Z" fill="none" stroke="#000000" stroke-width="4" />
+                </g>
+                <g transform="translate(170, 38)">
+                  <text x="0" y="44" font-family="'Inter', system-ui, sans-serif" font-size="44" font-weight="900" fill="#000000" letter-spacing="-1">
+                    OficiosBarriales
+                  </text>
+                  <text x="2" y="74" font-family="'Inter', system-ui, sans-serif" font-size="13" font-weight="700" fill="#000000" letter-spacing="2.5">
+                    RED VECINAL SOLIDARIA • RÍO CUARTO
+                  </text>
+                </g>
+              </svg>
+            </div>
+            <div class="mt-4 pt-3 border-t border-slate-200 flex justify-end">
+              <button 
+                type="button" 
+                onclick="descargarSvg('svg-logo-monocromo', 'logo-oficios-barriales-monocromatico.svg')"
+                class="text-xs font-bold text-slate-800 hover:text-black py-1 px-2.5 rounded-lg focus-visible:ring-2 focus-visible:ring-slate-400"
+              >
+                Descargar SVG Monocromo ↓
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </article>
+
+    <!-- Pie de Página -->
+    <footer class="mt-12 pt-6 border-t border-slate-200 text-center text-sm text-slate-500">
+      <p class="font-semibold text-slate-700">Oficios Barriales — Impulso Barrial S.R.L.</p>
+      <p class="text-xs text-slate-500 mt-1">EFI Río Cuarto 2026 • Documento de entrega oficial de Identidad Visual</p>
+    </footer>
+
+  </div>
+
+  <!-- =================================================================== -->
+  <!-- UTILIDADES JAVASCRIPT PURAS PARA DESCARGA DIRECTA (SVG Y PNG)       -->
+  <!-- =================================================================== -->
+  <script>
+    (function () {
+      "use strict";
+
+      // Descarga de archivo vectorial SVG directo desde el DOM
+      window.descargarSvg = function (svgId, nombreArchivo) {
+        var svgEl = document.getElementById(svgId);
+        if (!svgEl) return;
+
+        var xml = new XMLSerializer().serializeToString(svgEl);
+        var blob = new Blob([xml], { type: "image/svg+xml;charset=utf-8" });
+        var url = URL.createObjectURL(blob);
+
+        var enlace = document.createElement("a");
+        enlace.href = url;
+        enlace.download = nombreArchivo;
+        document.body.appendChild(enlace);
+        enlace.click();
+        document.body.removeChild(enlace);
+        URL.revokeObjectURL(url);
+      };
+
+      // Exportación de SVG a imagen rasterizada PNG en alta resolución usando Canvas
+      window.descargarPng = function (svgId, ancho, alto, nombreArchivo) {
+        var svgEl = document.getElementById(svgId);
+        if (!svgEl) return;
+
+        var xml = new XMLSerializer().serializeToString(svgEl);
+        var svgBlob = new Blob([xml], { type: "image/svg+xml;charset=utf-8" });
+        var url = URL.createObjectURL(svgBlob);
+
+        var img = new Image();
+        img.onload = function () {
+          var canvas = document.createElement("canvas");
+          canvas.width = ancho;
+          canvas.height = alto;
+          var ctx = canvas.getContext("2d");
+
+          // Renderizar sobre el canvas
+          ctx.drawImage(img, 0, 0, ancho, alto);
+          URL.revokeObjectURL(url);
+
+          // Convertir a PNG y descargar
+          canvas.toBlob(function (blob) {
+            var urlPng = URL.createObjectURL(blob);
+            var enlace = document.createElement("a");
+            enlace.href = urlPng;
+            enlace.download = nombreArchivo;
+            document.body.appendChild(enlace);
+            enlace.click();
+            document.body.removeChild(enlace);
+            URL.revokeObjectURL(urlPng);
+          }, "image/png");
+        };
+        img.src = url;
+      };
+    })();
+  </script>
+</body>
+</html>

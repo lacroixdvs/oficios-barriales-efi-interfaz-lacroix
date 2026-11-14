@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap');
+
+/* Configuración tipográfica y base */
+:root {
+  --color-fondo: #F8FAFC;
+  --color-superficie: #FFFFFF;
+  --color-texto: #0F172A;
+  --color-azul-confianza: #1D4ED8;
+  --color-verde-trueque: #16A34A;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Área táctil mínima de 48px para cumplimiento estricto WCAG AA+ */
+.hit-target {
+  min-height: 48px;
+  min-width: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Foco visible de alto contraste obligatorio para navegación por teclado */
+*:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 4px #93C5FD, 0 0 0 6px #1D4ED8 !important;
+}
+
+/* Transiciones suaves entre vistas */
+.vista-spa {
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.vista-oculta {
+  display: none !important;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.vista-activa {
+  display: block !important;
+  opacity: 1;
+  animation: fadeIn 0.25s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Estados interactivos para botones y tarjetas */
+.tarjeta-interactiva {
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.tarjeta-interactiva:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px -2px rgba(15, 23, 42, 0.08);
+}
+
+.tarjeta-interactiva:active {
+  transform: scale(0.98);
+}
+
+.boton-interactivo {
+  transition: background-color 0.15s ease, transform 0.1s ease, box-shadow 0.15s ease;
+}
+
+.boton-interactivo:active {
+  transform: scale(0.97);
+}
+
+/* Insignia / Etiqueta accesible de trueque */
+.etiqueta-trueque {
+  background-color: #DCFCE7;
+  color: #14532D;
+  border: 1px solid #86EFAC;
+}
+
+/* Insignia / Etiqueta accesible de urgencias 24 hs */
+.etiqueta-urgencias {
+  background-color: #FEE2E2;
+  color: #991B1B;
+  border: 1px solid #FCA5A5;
+}
+
+/* Modal de confirmación de llamada */
+.modal-backdrop {
+  background-color: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(2px);
+}
